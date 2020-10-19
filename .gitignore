@@ -1,0 +1,17 @@
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.idea
+*.ai
+*.log
+*.pdf
+*.psd
+*.sublime*
+yarn-debug.log*
+yarn-error.log*
+node_modules/
+build/
+npm-debug.*
+Thumbs.db

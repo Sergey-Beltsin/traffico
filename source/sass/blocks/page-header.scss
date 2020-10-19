@@ -1,0 +1,5 @@
+.page-header {
+  &__wrapper {
+    @include container;
+  }
+}

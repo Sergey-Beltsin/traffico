@@ -1,0 +1,12 @@
+@mixin container {
+  width: 90%;
+  max-width: 1120px;
+  margin: 0 auto;
+}
+
+@mixin button {
+  min-height: 60px;
+  
+  background-color: $main-color;
+  border-radius: 5px;
+}
