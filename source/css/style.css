@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Rubik:wght@400;700&display=swap");
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Rubik", sans-serif;
+  font-weight: normal; }
+
+button {
+  font-family: inherit; }
+
+a {
+  color: inherit;
+  text-decoration: none; }
+
+.page-header {
+  background-image: url("../img/header-bg.svg");
+  background-repeat: no-repeat; }
+  .page-header__wrapper {
+    width: 90%;
+    max-width: 1120px;
+    margin: 0 auto; }
+  .page-header__title {
+    font-family: "DM Serif Display", serif;
+    font-size: 100px;
+    color: #ffffff;
+    line-height: 100%; }
+  .page-header__button {
+    min-height: 60px;
+    padding: 0 20px;
+    background-color: #EE4D47;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #ffffff;
+    font-weight: bold;
+    transition: 0.3s ease-in-out; }
+    .page-header__button:hover {
+      opacity: 0.8; }
+
+.main-nav {
+  width: 90%;
+  max-width: 1120px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; }
+  .main-nav__logo__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; }

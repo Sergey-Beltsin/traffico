@@ -11,8 +11,10 @@
 <body>
 <header class="page-header">
     <nav class="main-nav">
-        <img src="" alt="" class="main-nav__logo">
-        <span class="main-nav__logo-title">TRAFICO.</span>
+        <div class="main-nav__logo__wrapper">
+            <img src="./img/logo.svg" alt="" class="main-nav__logo">
+            <span class="main-nav__logo-title">TRAFICO.</span>
+        </div>
         <ul class="main-nav__list">
             <li class="main-nav__item">
                 <a href="" class="main-nav__link">ABOUT</a>
@@ -24,14 +26,22 @@
                 <a href="" class="main-nav__link">FAQS</a>
             </li>
             <li class="main-nav__item">
-                <button type="button" class="main-nav__link">CONTACT US</button>
+                <button type="button" class="main-nav__button">CONTACT US</button>
             </li>
         </ul>
     </nav>
     <div class="page-header__wrapper">
-        <h1 class="page-header__title">Your awesome traffic permit consultant.</h1>
-        <button type="button" class="page-header__button">GET STARTED</button>
+        <h1 class="page-header__title">
+            Your awesome <br />
+            traffic permit <br />
+            consultant.
+        </h1>
+        <button type="button" class="page-header__button">
+            GET STARTED
+            <img src="./img/arrow.svg" alt="">
+        </button>
     </div>
+    <img src="./img/header-car.svg" alt="" class="page-header__bg-car">
 </header>
 <main class="page-main">
     <section class="about">

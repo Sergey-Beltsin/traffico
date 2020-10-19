@@ -1,5 +1,47 @@
 .page-header {
+  max-width: 1575px;
+  padding-bottom: 580px;
+  
+  position: relative;
+  
+  background-image: url('../img/header-bg.svg');
+  background-repeat: no-repeat;
+  overflow: hidden;
+  
   &__wrapper {
     @include container;
   }
+  
+  &__title {
+    @include ff-dm-serif;
+  
+    font-size: 60px;
+    color: #ffffff;
+    line-height: 100%;
+  }
+  
+  &__button {
+    @include button;
+  
+    margin-bottom: 100px;
+    
+    & img {
+      margin-left: 25px;
+  
+      position: relative;
+      top: 2px;
+    }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .page-header {
+    &__title {
+      font-size: 100px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+
 }

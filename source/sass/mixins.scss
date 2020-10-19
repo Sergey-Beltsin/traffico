@@ -5,8 +5,49 @@
 }
 
 @mixin button {
+  @include on-hover-opacity;
+  
   min-height: 60px;
+  padding: 0 20px;
   
   background-color: $main-color;
+  border: none;
   border-radius: 5px;
+  cursor: pointer;
+  
+  color: #ffffff;
+  font-weight: bold;
+}
+
+@mixin flex-sb {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+@mixin ff-dm-serif {
+  font-family: $DM-serif, serif;
+}
+
+@mixin reset-list {
+  margin: 0;
+  padding: 0;
+  
+  list-style: none;
+}
+
+@mixin on-hover-opacity {
+  transition: $transition-duration $transition-timing-function;
+  
+  &:hover {
+    opacity: 0.8;
+  }
 }

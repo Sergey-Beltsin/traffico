@@ -1,0 +1,68 @@
+.main-nav {
+  @include container;
+  
+  padding-top: 40px;
+  
+  &__logo {
+    &__wrapper {
+      @include flex-center;
+  
+      margin-bottom: 20px;
+    }
+    
+    &-title {
+      margin-left: 30px;
+      margin-top: 3px;
+      
+      font-size: 32px;
+      color: #ffffff;
+      line-height: 100%;
+      font-family: $DM-serif;
+    }
+  }
+  
+  &__list {
+    @include reset-list;
+  }
+  
+  &__item {
+    margin-bottom: 6px;
+    
+    text-align: right;
+  }
+  
+  &__link {
+    @include on-hover-opacity;
+  
+    font-weight: bold;
+    color: #ffffff;
+  }
+  
+  &__button {
+    @include button;
+    
+    min-width: 160px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav {
+    @include flex-sb;
+    
+    &__logo {
+      &__wrapper {
+        margin-bottom: 0;
+      }
+    }
+  
+    &__list {
+      @include flex-sb;
+    
+      min-width: 600px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+
+}
