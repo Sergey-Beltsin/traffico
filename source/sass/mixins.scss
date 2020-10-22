@@ -51,3 +51,11 @@
     opacity: 0.8;
   }
 }
+
+@mixin subtitle {
+  font-weight: bold;
+  font-size: 24px;
+  color: $main-color;
+  line-height: 40px;
+  letter-spacing: 0.1em;
+}

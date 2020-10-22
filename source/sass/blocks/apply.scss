@@ -1,0 +1,46 @@
+.apply {
+  @include container;
+  
+  &__subtitle {
+    @include subtitle;
+  }
+  
+  &__descr {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 40px;
+  }
+  
+  &__img {
+    width: 80%;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .apply {
+    @include flex-sb;
+  
+    align-items: flex-start;
+    
+    &__wrapper {
+      order: 2;
+      
+      width: 50%;
+    }
+    
+    &__img {
+      order: 1;
+      
+      width: 50%;
+    }
+    
+    &__subtitle {
+      margin-bottom: 40px;
+    }
+    
+    &__descr {
+      font-size: 18px;
+    }
+  }
+}
+

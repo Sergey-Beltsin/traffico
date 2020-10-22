@@ -1,0 +1,155 @@
+.faq {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  
+  background-image: url('../img/faq-bg.svg');
+  background-repeat: no-repeat;
+  background-position: 100% 0;
+  
+  &__main-wrapper {
+    @include container;
+  }
+  
+  &__subtitle {
+    @include subtitle;
+  }
+  
+  &__title {
+    font-family: $DM-serif;
+    color: $text-color;
+    font-size: 24px;
+    line-height: 140%;
+  }
+  
+  &__list {
+    @include reset-list;
+  }
+  
+  &__item {
+    display: flex;
+    flex-direction: column;
+    margin-top: -10px;
+    
+    width: 100%;
+    margin-bottom: 10px;
+    
+    &--visible {
+      .faq__descr {
+        padding-top: 100px;
+        padding-bottom: 120px;
+    
+        opacity: 1;
+        visibility: visible;
+      }
+      
+      .faq__show-more {
+        &::before {
+          transform: rotate(90deg);
+        }
+      }
+    }
+    
+    &__wrapper {
+      @include flex-sb;
+      
+      flex-wrap: nowrap;
+  
+      min-height: 90px;
+      padding: 15px 35px;
+  
+      position: relative;
+      z-index: 4;
+  
+      background-color: #FFFFFF;
+      box-shadow: 0px 20px 40px rgba(238, 77, 71, 0.1);
+      border-radius: 10px;
+    }
+  }
+  
+  &__descr {
+    @include flex-center;
+  
+    height: 0;
+    padding: 15px 35px;
+    margin-top: -20px;
+  
+    position: relative;
+    z-index: 3;
+    
+    background: #FFF7F5;
+    box-shadow: 0px 20px 40px rgba(238, 77, 71, 0.1);
+    border-radius: 10px;
+    opacity: 0;
+    visibility: hidden;
+    
+    transition: $transition-duration $transition-timing-function;
+  }
+  
+  &__show-more {
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    margin-left: 30px;
+    
+    position: relative;
+    
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    
+    &::after,
+    &::before {
+      content: '';
+  
+      position: absolute;
+  
+      background-color: $main-color;
+      
+      transition: $transition-duration $transition-timing-function;
+    }
+    
+    &::after {
+      top: 9px;
+      left: 0;
+  
+      width: 20px;
+      height: 2px;
+    }
+    
+    &::before {
+      top: 0;
+      left: 9px;
+  
+      width: 2px;
+      height: 20px;
+    }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .faq {
+    padding-top: 200px;
+    
+    &__wrapper {
+      @include flex-sb;
+    }
+    
+    &__title {
+      font-size: 48px;
+      
+      &__wrapper {
+        width: 50%;
+      }
+    }
+    
+    &__img {
+      width: 50%;
+    }
+    
+    &__list {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 20px;
+    }
+  }
+}
